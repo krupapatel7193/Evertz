@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-11T21:30:44Z" name="Suite" finished-at="2022-02-11T21:30:50Z" duration-ms="5878">
+    <groups>
+    </groups>
+    <test started-at="2022-02-11T21:30:44Z" name="regression" finished-at="2022-02-11T21:30:45Z" duration-ms="763">
+      <class name="testcases.TC001MyAccount">
+        <test-method signature="openLoginPage()[pri:0, instance:testcases.TC001MyAccount@45752059]" started-at="2022-02-11T21:30:44Z" name="openLoginPage" finished-at="2022-02-11T21:30:45Z" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+      </class> <!-- testcases.TC001MyAccount -->
+    </test> <!-- regression -->
+    <test started-at="2022-02-11T21:30:45Z" name="register" finished-at="2022-02-11T21:30:48Z" duration-ms="2566">
+      <class name="testcases.TC002Register">
+        <test-method signature="verifyRegister()[pri:1, instance:testcases.TC002Register@3eb738bb]" started-at="2022-02-11T21:30:45Z" name="verifyRegister" finished-at="2022-02-11T21:30:46Z" duration-ms="1169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegister -->
+        <test-method signature="verifyRegister1()[pri:2, instance:testcases.TC002Register@3eb738bb]" started-at="2022-02-11T21:30:46Z" name="verifyRegister1" finished-at="2022-02-11T21:30:48Z" duration-ms="1311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegister1 -->
+      </class> <!-- testcases.TC002Register -->
+    </test> <!-- register -->
+    <test started-at="2022-02-11T21:30:48Z" name="login" finished-at="2022-02-11T21:30:50Z" duration-ms="2525">
+      <class name="testcases.TC003Login">
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:testcases.TC003Login@7eac9008]" started-at="2022-02-11T21:30:42Z" name="Initialize" finished-at="2022-02-11T21:30:44Z" duration-ms="2423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method signature="verifyLogin1()[pri:1, instance:testcases.TC003Login@7eac9008]" started-at="2022-02-11T21:30:48Z" name="verifyLogin1" finished-at="2022-02-11T21:30:49Z" duration-ms="1165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin1 -->
+        <test-method signature="verifyLogin2()[pri:2, instance:testcases.TC003Login@7eac9008]" started-at="2022-02-11T21:30:49Z" name="verifyLogin2" finished-at="2022-02-11T21:30:50Z" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin2 -->
+        <test-method signature="verifyLogin(java.lang.String, java.lang.String)[pri:3, instance:testcases.TC003Login@7eac9008]" started-at="2022-02-11T21:30:50Z" name="verifyLogin" data-provider="dp" finished-at="2022-02-11T21:30:50Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void testcases.TC003Login.verifyLogin(java.lang.String,java.lang.String) requires a @DataProvider named : dp]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void testcases.TC003Login.verifyLogin(java.lang.String,java.lang.String) requires a @DataProvider named : dp
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003Login@7eac9008]" started-at="2022-02-11T21:30:50Z" name="tearDown" finished-at="2022-02-11T21:30:51Z" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC003Login -->
+    </test> <!-- login -->
+  </suite> <!-- Suite -->
+</testng-results>

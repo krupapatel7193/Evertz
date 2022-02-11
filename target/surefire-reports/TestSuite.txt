@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.539 s <<< FAILURE! - in TestSuite
+testcases.TC003Login.verifyLogin  Time elapsed: 1.329 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Method public void testcases.TC003Login.verifyLogin(java.lang.String,java.lang.String) requires a @DataProvider named : dp
+
